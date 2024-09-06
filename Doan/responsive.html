@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 100%;
+     }
+
+    html{
+        font-family: Arial, Helvetica, sans-serif;
+     }
+
+    .header{
+        width:100%;
+        height: 100px;
+        padding:10px;
+        color:#fff;
+        background-color: rgb(76, 179, 76);
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .content{
+        width:100%;
+    }
+
+    .content>div{
+        width:50%;
+        margin-left:20%;
+    }
+    
+    @media screen and (min-width:1024px) {
+       .content{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+       }
+    }
+
+    @media screen and (max-width:767px) {
+    .content{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+       }
+    }
+</style>
+<body>
+    <!-- Phần Header -->
+        <div class="header">
+            <h1><b>VTC Academy Fashion Week</b></h1>
+            <p>Resize this responsive page</p>
+        </div>
+
+     <!-- Phần Content -->
+        <div class="content">
+            <div class="London"> 
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                 <p>It is the most populous city in the United Kingdom,
+                    with a metropolitan area of over 13 million inhabitants.</p>
+                <img src="https://assets.vogue.com/photos/63f62ec779f05e0b19793831/master/w_1600%2Cc_limit/2102edit_GettyImages-1467672669.jpg">
+            </div>
+            <div class="Paris"> 
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p> 
+                <p>The Paris area is one of the largest population centers in Europe,
+                with more than 12 million inhabitants.</p>
+                <img src="https://fashionjackson.com/wp-content/uploads/2017/11/Fashion-Jackson-Eiffel-Tower-Paris-France-Green-Wool-Coat-Black-White-Stripe-Turtleneck-Black-Skinny-Jeans-Givency-Antigona-Cognac-Satchel-Gucci-Mules-4-1140x1530.jpg">
+            </div>
+            <div class="Tokyo"> 
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+                <p>It is the center of the Greater Tokyo Area,
+                and the most populous metropolitan area in the world.</p>
+                <img src="https://static.toiimg.com/photo/63907502.cms?imgsize=1914218">
+            </div>
+        </div>
+</body>
+</html>
